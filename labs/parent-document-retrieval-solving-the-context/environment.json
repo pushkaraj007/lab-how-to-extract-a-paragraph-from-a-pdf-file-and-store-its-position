@@ -1,0 +1,19 @@
+{
+  "hardware": "GitHub Actions ubuntu-latest (2-core CPU)",
+  "runtime": "GitHub Actions Python 3.11",
+  "pythonVersion": "3.11",
+  "datasetSource": "Synthetic / public test fixtures (no confidential company data)",
+  "databaseSource": "None / in-memory",
+  "randomSeed": "42",
+  "packages": [
+    "chromadb",
+    "langchain",
+    "langchain-core",
+    "langchain_community",
+    "langchain_core",
+    "langchain_openai",
+    "langchain_text_splitters",
+    "pydantic"
+  ],
+  "colabNotebookRef": "https://colab.research.google.com/github/pushkaraj007/lab-how-to-extract-a-paragraph-from-a-pdf-file-and-store-its-position/blob/main/labs/parent-document-retrieval-solving-the-context/notebook.ipynb"
+}
