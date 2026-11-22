@@ -1,0 +1,4 @@
+# Auto-collected Python dependencies for structural-layout-aware-chunking-for-financial
+langchain
+pymupdf
+unstructured
