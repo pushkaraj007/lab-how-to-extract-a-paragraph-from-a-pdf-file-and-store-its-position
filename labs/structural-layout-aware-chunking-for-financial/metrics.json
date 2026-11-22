@@ -1,0 +1,45 @@
+{
+  "labId": "lab_mwsbr1w7_1u85",
+  "title": "Structural Layout-Aware Chunking for Financial Table Extraction",
+  "successMetric": "Achieved 100% cell-coordinate precision on complex multi-column financial disclosures.",
+  "generatedAt": "2026-11-22T21:38:58.409Z",
+  "metrics": [
+    {
+      "key": "cases_tested",
+      "value": 120,
+      "unit": "",
+      "baseline": null,
+      "delta": "",
+      "source": "browser",
+      "capturedAt": "2026-11-22T21:07:31.295Z"
+    },
+    {
+      "key": "baseline_rate",
+      "value": 0.75,
+      "unit": "",
+      "baseline": null,
+      "delta": "",
+      "source": "browser",
+      "capturedAt": "2026-11-22T21:07:31.295Z"
+    },
+    {
+      "key": "candidate_rate",
+      "value": 1,
+      "unit": "",
+      "baseline": null,
+      "delta": "",
+      "source": "browser",
+      "capturedAt": "2026-11-22T21:07:31.295Z"
+    },
+    {
+      "key": "elapsed_ms",
+      "value": 0.3,
+      "unit": "",
+      "baseline": null,
+      "delta": "",
+      "source": "browser",
+      "capturedAt": "2026-11-22T21:07:31.295Z"
+    }
+  ],
+  "takeaways": []
+}
