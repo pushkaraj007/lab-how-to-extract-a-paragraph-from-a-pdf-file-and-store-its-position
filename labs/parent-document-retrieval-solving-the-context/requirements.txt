@@ -1,0 +1,9 @@
+# Auto-collected Python dependencies for parent-document-retrieval-solving-the-context
+chromadb
+langchain
+langchain-core
+langchain_community
+langchain_core
+langchain_openai
+langchain_text_splitters
+pydantic
