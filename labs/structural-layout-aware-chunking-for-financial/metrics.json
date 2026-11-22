@@ -2,7 +2,7 @@
   "labId": "lab_mwsbr1w7_1u85",
   "title": "Structural Layout-Aware Chunking for Financial Table Extraction",
   "successMetric": "Achieved 100% cell-coordinate precision on complex multi-column financial disclosures.",
-  "generatedAt": "2026-11-22T21:38:58.409Z",
+  "generatedAt": "2026-11-22T21:39:22.178Z",
   "metrics": [
     {
       "key": "cases_tested",
