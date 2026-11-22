@@ -1,0 +1,8 @@
+{
+  "labId": "lab_mwsde0de_iu7j",
+  "title": "Parent-Document Retrieval: Solving the Context Fragmentation Problem",
+  "successMetric": "Hallucination reduction verified via LLM-as-a-Judge against a ground-truth dataset.",
+  "generatedAt": "2026-11-22T21:51:00.664Z",
+  "metrics": [],
+  "takeaways": []
+}
