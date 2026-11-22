@@ -1,0 +1,13 @@
+{
+  "hardware": "GitHub Actions ubuntu-latest (2-core CPU)",
+  "runtime": "GitHub Actions Python 3.11",
+  "pythonVersion": "3.11",
+  "datasetSource": "Synthetic / public test fixtures (no confidential company data)",
+  "databaseSource": "None / in-memory",
+  "randomSeed": "42",
+  "packages": [
+    "pdfplumber",
+    "pymupdf"
+  ],
+  "colabNotebookRef": "https://colab.research.google.com/github/pushkaraj007/lab-how-to-extract-a-paragraph-from-a-pdf-file-and-store-its-position/blob/main/labs/how-to-extract-a-paragraph-from-a-pdf-file-and-store-its-positio/notebook.ipynb"
+}
