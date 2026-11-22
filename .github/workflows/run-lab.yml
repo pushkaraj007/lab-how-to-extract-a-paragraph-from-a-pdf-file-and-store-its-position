@@ -1,0 +1,56 @@
+name: Run Lab CPU Experiment
+
+on:
+  workflow_dispatch:
+    inputs:
+      lab_slug:
+        description: "Lab folder slug inside labs/<slug>"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  run-cpu-experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout dedicated public lab repo
+        uses: actions/checkout@v4.2.2
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5.4.0
+        with:
+          python-version: "3.11"
+
+      - name: Validate lab slug
+        run: |
+          if ! [[ "${{ inputs.lab_slug }}" =~ ^[a-z0-9-]+$ ]]; then
+            echo "Invalid lab_slug"
+            exit 1
+          fi
+
+      - name: Install lab dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f "labs/${{ inputs.lab_slug }}/requirements.txt" ]; then
+            pip install -r "labs/${{ inputs.lab_slug }}/requirements.txt"
+          fi
+          pip install pytest
+
+      - name: Run CPU experiment and capture metrics.json + environment.json
+        run: |
+          cd "labs/${{ inputs.lab_slug }}"
+          python run_experiment.py
+          pytest tests/test_solution.py
+
+      - name: Commit updated metrics.json and environment.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "labs/${{ inputs.lab_slug }}/metrics.json" "labs/${{ inputs.lab_slug }}/environment.json"
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(lab): record CPU Actions metrics for ${{ inputs.lab_slug }}"
+            git push
+          fi
