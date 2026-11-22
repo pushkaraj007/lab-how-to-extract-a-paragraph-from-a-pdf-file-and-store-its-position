@@ -1,0 +1,3 @@
+# Auto-collected Python dependencies for how-to-extract-a-paragraph-from-a-pdf-file-and-store-its-positio
+pdfplumber
+pymupdf
